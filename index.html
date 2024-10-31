@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    padding :0;
+    margin :0;
+    background:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100vh ;
+}
+.title-box{
+    width: 500px;
+}
+.title-box h1{
+    font-size: 70px;
+    margin-bottom: -10px;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.title-box>p{
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 32px;
+
+}
+.foam{
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background:rgb(255, 255, 255);
+    margin-left: 60px;
+    box-shadow: 0px 2px 10px 1px rgb(56, 61, 56);
+}
+.foam input{
+    width:100%;
+    margin-bottom:15px;
+    padding: 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    outline: none;
+
+}
+.foam input:focus{
+    box-shadow: 0px 0px 1px 1px rgb(51, 51, 160) ;
+}
+.foam button{
+    width: 100%;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:600 ;
+    border-radius: 5px;
+    border:none;
+    padding: 13px 0;
+    cursor:pointer ;
+    background: blue;
+}
+.foam button:hover{
+    background: rgb(69, 69, 173);
+
+}
+.foam a{
+    color:rgb(8, 8, 199);
+    font-size: 14px;
+    text-decoration:none ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block;
+}
+.foam a:hover{
+    text-decoration: underline;
+}
+.foam hr{
+    border: 1 px solid rgb(238, 226, 229); 
+    margin-bottom: 15px;
+
+}
+.foam .create a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding:15px 20px;
+    background: green;
+    font-weight: 600px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.foam .create a:hover{
+    background: rgb(36, 230, 36);
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="title-box">
+            <h1>facebook</h1>
+            <p>Connect with friends and the world<br>
+            around you on facebook</p>
+        </div>
+        <div class="foam">
+            <foam action="#">
+                <input type="email" placeholder="email or phone number">
+                <input type="password" placeholder="password">
+                <button type="submit">log in</button>
+                <a href="#">forget password ?</a>
+            </foam>
+            <hr>
+            <div class="create">
+                <a href="#">create new account</a>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
